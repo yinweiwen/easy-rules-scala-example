@@ -1,0 +1,8 @@
+name: "sensor rule"
+description: "sensor handle rule"
+condition: "sensor.data.v(\"temperature\")>30"
+condition: "true"
+actions:
+  - "System.out.println(sensor);"
+  - "sensor.validate();"
+  - "sensor.analyze();"
